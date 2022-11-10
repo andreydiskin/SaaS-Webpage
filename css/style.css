@@ -1,0 +1,1292 @@
+/* importing Poppins 400 and 500 weight
+   and Open Sans 600 weight as on Figma */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Poppins:wght@400;500&display=swap");
+
+/* In the beginning of each page */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f5f6f8;
+}
+
+.container {
+  /* The main container that wraps everything - as the body */
+  height: 100vh;
+  width: 100vw;
+  background-color: #f5f6f8;
+  /* flex is as row by default
+    for all the container elements inside our page */
+  display: flex;
+}
+
+/* Imporatant note about the whole assigment!
+       For full responsiveness to any screen size:
+       used convertion to vh/vw according to Figma sizes (px) by 
+       the following formula (according the Figma sizes 1440x850): 
+       height - (the height needed/850)*100
+       width - (the width needed/1440)*100
+       found this solution by StackOverFlow */
+
+.side-bar {
+  /* used the formula that converts vh/vw from px
+    that I've found by StackOverFlow as mentioned below */
+  width: 17.777vw;
+  height: 100vh;
+
+  /* white */
+  background: #ffffff;
+  /* sidebar shadow */
+  box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.06);
+}
+
+.search-bar {
+  /* used the formula that converts vh/vw from px
+    that I've found by StackOverFlow as mentioned below */
+
+  width: 82.222vw;
+  height: 7.058vh;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: -500;
+  padding: 0;
+
+  /* white */
+  background: #ffffff;
+
+  box-shadow: 6px 5px 18px rgba(0, 0, 0, 0.06) inset;
+}
+
+.content-wrap {
+  /* flex is as row by default
+    for all the container elements inside our content-wrap */
+  display: flex;
+}
+
+.left-con {
+  /* used the formula that converts vh/vw from px
+    that I've found by StackOverFlow as mentioned below */
+  width: 44.097vw;
+  height: 84.47vh;
+
+  /* For full responsiveness to any screen size:
+       used convertion to vh/vw according to Figma sizes (px) by 
+       the following formula (according the Figma sizes 1440x850): 
+       height - (the height needed/850)*100
+       width - (the width needed/1440)*100
+       found this solution by StackOverFlow */
+  margin-left: 2.5vw;
+  margin-right: 2.083vw;
+  margin-top: 4.117vh;
+
+  /* white */
+
+  background: #ffffff;
+  /* box shadow */
+
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+}
+
+.right-top-con {
+  /* used the formula that converts vh/vw from px
+    that I've found by StackOverFlow as mentioned below */
+  width: 30.902vw;
+  height: 40.47vh;
+
+  /* made a convertion from px to vh/vw by the formula found in StackOverFlow as mentioned in left-con comments */
+  margin-top: 4.117vh;
+
+  /* white */
+
+  background: #ffffff;
+  /* box shadow */
+
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+}
+
+.right-bottom-con {
+  /* used the formula that converts vh/vw from px
+    that I've found by StackOverFlow as mentioned below */
+  width: 30.902vw;
+  height: 40.47vh;
+
+  /* made a convertion from px to vh/vw by the formula found in StackOverFlow as mentioned in left-con comments */
+  margin-top: 3.529vh;
+
+  /* white */
+
+  background: #ffffff;
+  /* box shadow */
+
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+}
+
+/* ---------- side-bar ------------ */
+
+.nav-bar-top-title {
+  /* used the formula that converts vh/vw from px
+    that I've found by StackOverFlow as mentioned below */
+  height: 7.058vh;
+  width: 17.778vw;
+}
+
+.nav-bar-top-title div {
+  /* used the formula that converts vh/vw from px
+    that I've found by StackOverFlow as mentioned below */
+  height: 3.058vh;
+  width: 4.791vw;
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+
+  /* Accent blue */
+
+  color: #109cf1;
+
+  padding-top: 2vh;
+  margin-left: 1.666666667vw;
+}
+
+.top-devider {
+  /* used the formula that converts vh/vw from px
+    that I've found by StackOverFlow as mentioned below */
+  height: 0.117vh;
+
+  /* divider */
+
+  background: #ebeff2;
+}
+
+.profile-and-list {
+  /* used the formula that converts vh/vw from px
+    that I've found by StackOverFlow as mentioned below */
+  height: 41.647vh;
+  width: 17.778vw;
+}
+
+.nav-profile-con {
+  /* used the formula that converts vh/vw from px
+    that I've found by StackOverFlow as mentioned below */
+  height: 5.529vh;
+  width: 17.778vw;
+
+  display: flex;
+
+  padding-left: 1.041vw;
+  padding-top: 2.823vh;
+}
+
+.flex-center {
+  /* display as row, items aligned to center, contect to center */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.nav-profile-pic {
+  height: 5.529vh;
+  width: 4.305vw;
+}
+
+.profile-svg {
+  background-image: url("../svg/profile-sierra.svg");
+
+  height: 46px;
+  width: 46px;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.nav-profile-text {
+  height: 4.705vh;
+  width: 10.138vw;
+
+  margin-top: 0.352vh;
+  margin-left: 0.625vw;
+  margin-right: 1.666666667vw;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.sierra {
+  height: 2.47vh;
+  width: 10.138vw;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+
+  /* black */
+
+  color: #192a3e;
+}
+
+.email {
+  height: 2vh;
+  width: 10.138vw;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 16px;
+  /* identical to box height */
+
+  letter-spacing: 0.01em;
+
+  /* gray */
+
+  color: #90a0b7;
+}
+
+.nav-bar-menu-con {
+  /* used the formula that converts vh/vw from px
+    that I've found by StackOverFlow as mentioned below */
+  height: 28.705vh;
+  width: 17.777vw;
+}
+
+.nav-bar-menu-con ul li {
+  /* used the formula that converts vh/vw from px
+    that I've found by StackOverFlow as mentioned below */
+  height: 2.352vh;
+  width: 17.777vw;
+
+  display: flex;
+  margin-bottom: 2.352vh;
+}
+
+.nav-bar-menu-con ul li .li-text {
+  /* used the formula that converts vh/vw from px
+    that I've found by StackOverFlow as mentioned below */
+  height: 2.352vh;
+  width: 12.083vw;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  /* identical to box height */
+
+  letter-spacing: 0.01em;
+
+  /* dark_blue */
+
+  color: #334d6e;
+}
+
+.icon-pic {
+  /* used the formula that converts vh/vw from px
+    that I've found by StackOverFlow as mentioned below */
+  height: 2.352vh;
+  width: 1.388888889vw;
+
+  margin-left: 1.666666667vw;
+  margin-right: 0.972vw;
+}
+
+.dashboard-svg {
+  background-image: url("../svg/dashboard-icon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 15px;
+  width: 15.1px;
+  /* Accent blue */
+
+  border: 1.4px solid #109cf1;
+  box-sizing: border-box;
+  border-radius: 1px;
+  /* padding: 5%; */
+  border-collapse: separate;
+  border: transparent;
+}
+
+.tasks-svg {
+  background-image: url("../svg/tasks-icon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 15px;
+  width: 15.83px;
+
+  /* icon_gray */
+
+  border: 1.4px solid #c2cfe0;
+  box-sizing: border-box;
+  /* padding: 5%; */
+  border-collapse: separate;
+  border: transparent;
+}
+
+.email-svg {
+  background-image: url("../svg/email-icon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 13.33px;
+  width: 16.67px;
+
+  /* icon_gray */
+
+  border: 1.4px solid #c2cfe0;
+  box-sizing: border-box;
+  /* padding: 5%; */
+  border-collapse: separate;
+  border: transparent;
+}
+
+.contacts-svg {
+  background-image: url("../svg/contacts-icon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 15.56px;
+  width: 15.56px;
+
+  /* icon_gray */
+
+  border: 1.4px solid #c2cfe0;
+  box-sizing: border-box;
+  /* padding: 5%; */
+  border-collapse: separate;
+  border: transparent;
+}
+
+.chat-svg {
+  background-image: url("../svg/chat-icon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 16.67px;
+  width: 16.67px;
+
+  /* icon_gray */
+
+  border: 1.4px solid #c2cfe0;
+  box-sizing: border-box;
+  /* padding: 5%;*/
+  border-collapse: separate;
+  border: transparent;
+}
+
+.deals-svg {
+  background-image: url("../svg/deals-icon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 13.33px;
+  width: 16.67px;
+
+  /* icon_gray */
+
+  border: 1.4px solid #c2cfe0;
+  box-sizing: border-box;
+  /* padding: 5%;*/
+  border-collapse: separate;
+  border: transparent;
+}
+
+.settings-svg {
+  background-image: url("../svg/settings-icon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 3.33px;
+  width: 13.33px;
+
+  /* icon_gray */
+
+  background: #c2cfe0;
+  /* padding: 5%;*/
+  border-collapse: separate;
+  border: transparent;
+}
+
+.toggle-svg {
+  background-image: url("../svg/toggle-icon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 14px;
+  width: 14px;
+
+  /* icon_gray */
+
+  background: #c2cfe0;
+  /* padding: 5%;*/
+  border-collapse: separate;
+  border: transparent;
+}
+
+.nav-bar-menu-con ul li:first-child {
+  margin-top: 7.4117vh;
+}
+
+.nav-bar-menu-con ul li:nth-last-child(2) {
+  padding-top: 3.8235vh;
+}
+
+.nav-bar-menu-con ul li:last-child {
+  padding-top: 41.5vh;
+}
+
+.nav-bar-menu-con ul li:last-child .li-text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 16px;
+  /* identical to box height */
+
+  letter-spacing: 0.01em;
+
+  /* gray */
+
+  color: #90a0b7;
+}
+
+.nav-bar-menu-con ul li:first-child .li-text {
+  color: #109cf1;
+}
+
+/* ------- search bar --------- */
+
+.search-bar .search-button {
+  text-indent: -999px;
+  overflow: hidden;
+  width: 40px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid transparent;
+  border-radius: inherit;
+  background: transparent url("../svg/search-icon.svg") no-repeat center;
+  cursor: pointer;
+  opacity: 0.7;
+  margin-left: 2.222222222vw;
+}
+
+.search-bar button::placeholder {
+  opacity: 1;
+}
+
+.search-bar input {
+  border: none;
+  background: transparent;
+  margin: 0;
+  padding: 0.8235294vh 0.1vw;
+  font-size: 14px;
+  color: inherit;
+  border: 1px solid transparent;
+  border-radius: inherit;
+}
+
+.search-bar input::placeholder {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height */
+
+  letter-spacing: 0.01em;
+  color: #90a0b7;
+}
+
+.bell-button {
+  background: transparent url("../svg/bell-icon.svg") no-repeat center;
+  text-indent: -999px;
+  overflow: hidden;
+  width: 40px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid transparent;
+  border-radius: inherit;
+  height: inherit;
+  margin-right: 2.291666667vw;
+}
+
+/* ------- right-top-con ---------- */
+
+.right-con-top-text {
+  height: 6.352vh;
+}
+
+.right-con-top-title {
+  height: 2.705vh;
+  width: 13.88888889vw;
+
+  display: flex;
+  align-items: center;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  /* identical to box height */
+
+  letter-spacing: 0.01em;
+
+  /* black */
+
+  color: #192a3e;
+  margin-left: 1.666666667vw;
+}
+
+.left-con-time-picker {
+  height: 2.11vh;
+  width: 6.041vw;
+  display: flex;
+  align-items: center;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height */
+
+  letter-spacing: 0.01em;
+
+  /* filter_gray */
+
+  color: #6a707e;
+  margin-right: 1.666666667vw;
+}
+
+.left-con-time-picker a,
+.left-con-time-picker-bottom a,
+.left-con-time-picker-month a {
+  color: #109cf1;
+}
+
+.left-con-time-picker img {
+  margin-left: 5px;
+}
+
+.bottom-part {
+  /* used the formula that converts vh/vw from px
+    that I've found by StackOverFlow as mentioned below */
+  height: 34vh;
+  width: 30.902vw;
+}
+
+.text-with-dot {
+  /* used the formula that converts vh/vw from px
+    that I've found by StackOverFlow as mentioned below */
+  height: 1.8823vh;
+  width: 11.458vw;
+
+  display: flex;
+  align-items: center;
+
+  margin-left: 1.666666667vw;
+  margin-top: 1.8823vh;
+}
+
+.closed-details {
+  height: 1.8823vh;
+  width: 10.3472vw;
+
+  display: flex;
+  align-items: center;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: 0.01em;
+
+  /* black */
+
+  color: #192a3e;
+  margin-left: 0.555vw;
+}
+
+.left-img-wrap {
+  text-align: center;
+  background-image: url("../svg/deals.svg");
+  height: 80%;
+  width: 397px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  margin-left: 1.666666667vw;
+  margin-top: 2.235vh;
+}
+
+/* ---------- right-bottom-con ------------*/
+
+.left-con-time-picker-bottom {
+  height: 2.11vh;
+  display: flex;
+  align-items: center;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height */
+
+  letter-spacing: 0.01em;
+
+  /* filter_gray */
+
+  color: #6a707e;
+  margin-right: 1.666666667vw;
+}
+
+.left-con-time-picker-bottom img,
+.left-con-time-picker-month img {
+  margin-left: 6px;
+}
+
+.pie-chart-bottom-right {
+  height: 34vh;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.taskimg {
+  margin-top: 3.882vh;
+  height: 80%;
+}
+
+
+.dots-ul {
+  list-style: none;
+  display: flex;
+  margin-bottom: 0.8vh;
+  align-items: center;
+  margin-left: -1.38888888vw;
+}
+
+.dots-ul li {
+  list-style: none;
+  margin-top: 1.4117vh;
+}
+
+.dots-ul li a {
+  margin-left: 2px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: 0.01em;
+  margin-left: 0.55555555vw;
+
+  /* black */
+
+  color: #192a3e;
+  text-align: left;
+}
+
+/* --------- left-con ---------------- */
+
+.left-con-top-text {
+  /* used the formula that converts vh/vw from px
+    that I've found by StackOverFlow as mentioned below */
+  height: 6.1176vh;
+}
+
+.left-con-top-title {
+  /* used the formula that converts vh/vw from px
+    that I've found by StackOverFlow as mentioned below */
+  height: 2.3529vh;
+  width: 24.58333vw;
+
+  display: flex;
+  align-items: center;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  /* identical to box height */
+
+  letter-spacing: 0.01em;
+
+  /* dark_blue */
+
+  color: #334d6e;
+
+  margin-left: 1.666666667vw;
+}
+
+.left-con-time-picker-month {
+  height: 2.11vh;
+
+  display: flex;
+  align-items: center;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height */
+
+  letter-spacing: 0.01em;
+
+  /* filter_gray */
+
+  color: #6a707e;
+
+  margin-right: 1.666666667vw;
+}
+
+.load-bar-on {
+  display: flex;
+  justify-content: center;
+  padding-left: 1.666666667vw;
+  padding-right: 1.666666667vw;
+}
+
+.loaded {
+  background-color: #2ed47a;
+  height: 0.4705882vh;
+  width: 32.63888vw;
+  flex: 2;
+  border-radius: 3px;
+}
+
+.unloaded {
+  height: 0.4705882vh;
+  width: 40.763888vw;
+  left: 24px;
+  top: 52px;
+  border-radius: 3px;
+  flex: 1;
+  background: #ebeff2;
+}
+
+.left-con-dates {
+  height: 19.05882vh;
+}
+
+.left-con-date-headline {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 23px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: #192a3e;
+  padding-top: 2.3529vh;
+  padding-left: 1.666666667vw;
+  padding-bottom: 5.4117vh;
+}
+
+.left-con-date-table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.days,
+.dates {
+  /* used the formula that converts vh/vw from px
+    that I've found by StackOverFlow as mentioned below */
+  /* height: 2.3529vh; */
+  width: 40.7638vw;
+}
+
+.left-con-date-table .days div .one-day {
+  /* used the formula that converts vh/vw from px
+    that I've found by StackOverFlow as mentioned below */
+  height: 2.3529vh;
+  width: 2.22222vw;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.01em;
+
+  /* dark_blue */
+
+  color: #334d6e;
+
+  opacity: 0.5;
+}
+
+.left-con-date-table .dates div .one-date {
+  /* used the formula that converts vh/vw from px
+    that I've found by StackOverFlow as mentioned below */
+  /* height: 2.1176vh; */
+  width: 2.22222vw;
+  padding: 27%;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.01em;
+
+  /* profile_gray */
+
+  color: #4c5862;
+}
+
+.left-con-date-table .days div .blue,
+.left-con-date-table .dates div .blue {
+  /* Accent blue */
+
+  color: #109cf1;
+}
+
+.left-con-date-table .dates div .blue-circle {
+  background: #109cf1;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.01em;
+
+  /* white */
+
+  color: #ffffff;
+
+  border-radius: 50px;
+}
+
+.left-con-notfiction {
+  background: #ffffff;
+  /* padding: 2%; */
+
+  /* card shadow */
+  margin: 0.2% 0 0 0;	
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
+  margin-bottom: 0.4705882353vh;
+  border-radius: 4px;
+}
+
+/* .left-con-notfiction:first-child{
+	  margin-bottom: 0;
+} */
+
+.title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  /* identical to box height */
+
+  letter-spacing: 0.01em;
+
+  /* table_black */
+
+  color: #323c47;
+}
+
+.mobiletitle {
+  display: none;
+}
+
+.action-button {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height */
+
+  text-align: right;
+  letter-spacing: 0.01em;
+
+  /* gray */
+
+  color: #90a0b7;
+  text-align: right;
+}
+
+.due-date {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.due-date-text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  /* identical to box height */
+
+  letter-spacing: 0.01em;
+
+  /* dark_gray text */
+
+  color: #4c5862;
+
+  opacity: 0.5;
+  text-align: left;
+}
+
+.due-date-date {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  /* identical to box height */
+
+  letter-spacing: 0.01em;
+
+  /* dark_gray text */
+
+  color: #4c5862;
+  text-align: left;
+}
+
+.notf-profile {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: flex-start;
+  margin-top: 2.941176471vh;
+}
+
+.notf-profile p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  margin-left: 0.4861111111vw;
+  /* identical to box height */
+
+  letter-spacing: 0.01em;
+
+  /* table_gray */
+
+  color: #707683;
+}
+
+.status-btn {
+  height: 22px;
+  width: 84px;
+  left: 0px;
+  top: 0px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+}
+
+.status-btn-completed {
+  background: #2ed47a;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  /* white */
+
+  color: #ffffff;
+  border-radius: 4px;
+}
+
+.status-btn-ended {
+  background: #f7685b;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  /* white */
+
+  color: #ffffff;
+  border-radius: 4px;
+}
+
+.left-con-notfiction {
+  padding: 2%;
+  background: #ffffff;
+  /* card shadow */
+box-sizing: border-box;
+box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
+  margin-top: 4px;
+  border-radius: 4px;
+  width: 90%;
+}
+
+.show {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 20px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.01em;
+
+  /* Accent blue */
+
+  color: #109cf1;
+  margin-top: 16px;
+}
+
+.pic-n-button div .pen {
+  margin-right: 15.33px;
+}
+
+.pic-n-button div .bin {
+  margin-right: 13.33px;
+}
+
+.left-con-notfiction-inside{
+box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
+	border-radius: 4px;
+		padding: 4%;
+}
+
+.notf-grand-con{
+	display: flex;
+	flex-direction: column;
+	justify-content:space-around;
+	align-items: center;
+}
+
+/* ----------- mobile IPHONE X ---------- */
+
+
+@media only screen and (max-width: 1200px) {
+	.left-con-date-table .dates div .one-date {
+		padding: 15%;
+	}
+	.side-bar{
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 1400px) {
+
+	.left-con-time-picker{
+		width: inherit;
+		/* height: inherit; */
+	}
+	.left-img-wrap {
+		width: 90%;
+	}
+		
+	
+
+}
+@media only screen and (max-width: 872px) {
+.left-con-time-picker-bottom {
+		width: 100%;
+		/* height: ; */
+	}
+}
+@media only screen and (max-width:750px) {
+	.btn-and-bin{
+		display: flex;
+		justify-content: center;
+		align-items: baseline;
+	}
+	.left-con-top-title{
+		height: inherit;
+	}
+
+	.left-con-time-picker-month{
+				height: inherit;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.left-con-date-table .dates div .one-date {
+		padding: 5%;
+	}
+				
+}
+
+@media only screen and (max-width: 1100px) {
+	.taskimg {
+	height: 60%;
+	  }
+		  .dots-ul{
+			width: 30%;
+			margin-bottom: 20%;
+		  }
+}
+
+@media only screen and (max-width: 800px) {
+	.left-con-notfiction{
+		padding: 0%;
+	}
+
+.taskimg {
+		height: 40%;
+		margin-top: 25%;
+	}
+	.dots-ul {
+		width: 40%;
+		margin-bottom: 30%;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+  .side-bar {
+    display: none;
+  }
+
+  .right-bottom-con{
+	display: none;
+  }
+
+ .taskimg {
+height: 80%;
+  } 
+
+	  	.dots-ul {
+	  		/* width: 40%; */
+	  		margin-bottom: 0;
+	  	}
+
+  /* .right-bottom-con{
+	width: auto;
+	display: flex;
+	flex-direction: column;
+align-self: center;
+  } */
+
+  .search-bar {
+    width: 100vw;
+    padding: 4%;
+  }
+
+  .content-wrap {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .left-con {
+    margin: 0;
+    width: 100vw;
+    height: fit-content;
+  }
+
+  .left-con-top-title {
+    width: 47.58333vw;
+  }
+
+  .left-con-dates {
+    height: 7.05882vh;
+  }
+
+  .left-con-date-table {
+    display: none;
+  }
+
+  .status-btn-completed,
+  .status-btn-ended {
+    margin-top: 20px;
+  }
+
+  .notf-profile {
+    width: 36vw;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobiletitle {
+    display: inline;
+  }
+
+  .show {
+    display: none;
+  }
+
+  .right-top-con {
+    width: 100%;
+    overflow-y: hidden;
+    margin: 0;
+  }
+
+  .right-con-top-title {
+    display: none;
+  }
+
+  .left-con-time-picker {
+    margin-left: 265px;
+  }
+
+  .text-with-dot {
+    width: 22vw;
+  }
+
+  .closed-details {
+    width: 55.3472vw;
+  }
+
+  .right-buttom-con {
+    display: none;
+  }
+  .left-con-notfiction {
+    margin-bottom: 24px;
+	padding: 0%;
+  }
+
+  .main-con {
+    overflow: hidden;
+  }
+
+  .left-img-wrap {
+  	width: 100vw;
+  }
+}
